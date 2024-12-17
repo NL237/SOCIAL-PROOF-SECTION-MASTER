@@ -28,97 +28,187 @@
         align-items: center;
         justify-content: center;
       }
+      #global{
+        width: 70%;
+      }
       #top{
-        max-width: 80%;
+        width: 100%;
         display: flex;
-        gap: 20%;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5%;
         margin-bottom: 50px;
+        padding-right: 50px;
       }
       #lefttop{
         width: 40%;
       }
       #lefttop h1{
         color: var(--Very-Dark-Magenta);
+        font-size: 45px;
       }
       #lefttop p{
         color: hsl(303, 10%, 53%);;
         font-size: 14px;
         margin-top: 20px;
+        line-height: 18px;
       }
-      #righttop{
-        
+      #righttop>div{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: hsla(302, 10%, 53%, 0.11);
+        padding: 10px 30px 10px 20px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        column-gap: 15px;
+        position: relative;
       }
+      #righttop .rt2{
+        position: relative;
+        left: 25px;
+      }
+      #righttop .rt3{
+        position: relative;
+        left: 50px;
+      }
+      #righttop>div .stars img{
+        display: inline-block;
+        width: 13px;
+      }
+      #righttop div p{
+        color: var(--Very-Dark-Magenta);
+        font-size: 13px;
+        font-weight: 700;
+      }
+      #bottom{
+        width: 100%;
+        gap: 5%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+      }
+      #bottom>div{
+        background-color: var(--Very-Dark-Magenta);
+        padding: 25px;
+        border-radius: 7px;
+        position: relative;
+      }
+      #bottom>div .avatar{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 17px;
+        gap: 15px;
+      }
+      #bottom>div .avatar img{
+        width: 30px;
+        border: 0;
+        border-radius: 50%;
+      }
+      #bottom>div .avatar h4{
+        color: var(--White);
+        font-size: 14px;
+        font-weight: 400;
+      }
+      #bottom>div .avatar span{
+        color: var(--Soft-Pink);
+        font-size: 14px;
+      }
+      #bottom>div p{
+        font-size: 13px;
+        line-height: 16px;
+        color: var(--White);
+        font-weight: 300;
+      }
+      #bottom .card2{
+        top: 10px;
+      }
+      #bottom .card3{
+        top: 20px;
+      }
+      
 
     </style>
   </head>
   <body>
-    <div id="top">
+    <div id="global">
 
-      <div id="lefttop">
-        <h1>10,000+ of our users love our products.</h1>
+      <div id="top">
+
+        <div id="lefttop">
+          <h1>10,000+ of our users love our products.</h1>
+          
+          <p>We only provide great products combined with excellent customer service.
+          See what our satisfied customers are saying about our services.</p>    
+        </div>
         
-        <p>We only provide great products combined with excellent customer service.
-        See what our satisfied customers are saying about our services.</p>    
+        <div id="righttop">
+          <div class="rt1">
+            <div class="stars">
+              <img src="images/icon-star.svg" alt="Star">
+              <img src="images/icon-star.svg" alt="Star">
+              <img src="images/icon-star.svg" alt="Star">
+              <img src="images/icon-star.svg" alt="Star">
+              <img src="images/icon-star.svg" alt="Star">
+            </div>
+            <p>Rated 5 Stars in Reviews</p>
+          </div>
+          <div class="rt2">
+            <div class="stars">
+              <img src="images/icon-star.svg" alt="Star">
+              <img src="images/icon-star.svg" alt="Star">
+              <img src="images/icon-star.svg" alt="Star">
+              <img src="images/icon-star.svg" alt="Star">
+              <img src="images/icon-star.svg" alt="Star">
+            </div>
+            <p>Rated 5 Stars in Report Guru</p>
+          </div>
+          <div class="rt3">
+            <div class="stars">
+              <img src="images/icon-star.svg" alt="Star">
+              <img src="images/icon-star.svg" alt="Star">
+              <img src="images/icon-star.svg" alt="Star">
+              <img src="images/icon-star.svg" alt="Star">
+              <img src="images/icon-star.svg" alt="Star">
+            </div>
+            <p>Rated 5 Stars in BestTech</p>
+          </div>
+        </div>        
+  
       </div>
-      
-      <div id="righttop">
-        <div class="rt1">
-          <img src="images/icon-star.svg" alt="">
-          <p>Rated 5 Stars in Reviews</p>
+       
+      <div id="bottom">
+        <div class="card1">
+          <div class="avatar">
+            <img src="images/image-colton.jpg" alt="">
+            <h4>Colton Smith <br>
+            <span>Verified Buyer</span></h4>
+          </div>
+          <p>"We needed the same printed design as the one we had ordered a week prior.
+            Not only did they find the original order, but we also received it in time.
+            Excellent!"</p>
         </div>
-        <div class="rt2">
-          <img src="images/icon-star.svg" alt="">
-          <p>Rated 5 Stars in Report Guru</p>
+        <div class="card2">
+          <div class="avatar">
+            <img src="images/image-irene.jpg" alt="">
+            <h4>Irene Roberts <br>
+            <span>Verified Buyer</span></h4>
+          </div>
+          <p>"Customer service is always excellent and very quick turn around. Completely
+            delighted with the simplicity of the purchase and the speed of delivery."</p>
         </div>
-        <div class="rt3">
-          <img src="images/icon-star.svg" alt="">
-          <p>Rated 5 Stars in BestTech</p>
+        <div class="card3">
+          <div class="avatar">
+            <img src="images/image-anne.jpg" alt="">
+            <h4>Anne Wallace <br>
+            <span>Verified Buyer</span></h4>
+          </div>
+          <p>"Put an order with this company and can only praise them for the very high
+            standard. Will definitely use them again and recommend them to everyone!"</p>
         </div>
       </div>
 
     </div>
-     
-    <div id="bottom">
-      <div class="card card1">
-        <div class="avatar">
-          <img src="images/image-colton.jpg" alt="">
-          <h4>Colton Smith 
-          Verified Buyer</h4>
-        </div>
-        <p>"We needed the same printed design as the one we had ordered a week prior.
-          Not only did they find the original order, but we also received it in time.
-          Excellent!"</p>
-      </div>
-      <div class="card card2">
-        <div class="avatar">
-          <img src="images/image-irene.jpg" alt="">
-          <h4>Irene Roberts 
-          Verified Buyer</h4>
-        </div>
-        <p>"Customer service is always excellent and very quick turn around. Completely
-          delighted with the simplicity of the purchase and the speed of delivery."</p>
-      </div>
-      <div class="card card3">
-        <div class="avatar">
-          <img src="images/image-anne.jpg" alt="">
-          <h4>Anne Wallace 
-          Verified Buyer</h4>
-        </div>
-        <p>"Put an order with this company and can only praise them for the very high
-          standard. Will definitely use them again and recommend them to everyone!"</p>
-      </div>
-    </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
   </body>
 </html>
